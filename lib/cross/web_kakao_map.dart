@@ -11,6 +11,7 @@ class WebKakaoMap implements KakaoMap {
       initialSourceType: SourceType.URL,
       width: 400,
       height: 400,
+      javascriptMode: JavascriptMode.unrestricted,
     );
   }
 }
