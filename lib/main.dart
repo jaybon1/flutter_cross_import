@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: KakaoMap().getKakaoMap(),
+      home: KakaoMap().getKakaoMap(width: 400,height: 400),
       // home: KakaoMapView(width: 100, height: 100, kakaoMapKey: "5e7445773ec7458d647938cdb205ae11", lat: 33.450701, lng: 126.570667),
       // home:  !GetPlatform.isWeb ?  KakaoMapView(
       //     width: 400,

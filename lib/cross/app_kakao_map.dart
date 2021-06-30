@@ -4,14 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:kakaomap_webview/kakaomap_webview.dart';
+import 'package:webviewx/webviewx.dart';
 
 class AppKaKaoMap implements KakaoMap {
 
   @override
-  Widget getKakaoMap() {
+  Widget getKakaoMap({required double width, required double height}) {
     return KakaoMapView(
-        width: 400,
-        height: 400,
+        width: width,
+        height: height,
         kakaoMapKey: "5e7445773ec7458d647938cdb205ae11",
         lat: 33.450701,
         lng: 126.570667,
@@ -26,6 +27,7 @@ class AppKaKaoMap implements KakaoMap {
           //await _openKakaoMapScreen(context);
         });
   }
+
 }
 
 KakaoMap getKakaoMapClass() => AppKaKaoMap();
